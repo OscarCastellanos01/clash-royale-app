@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 
 export const useClashRoyale = () => {
   const cardsQuery = useQuery({
-    queryKey: ['clash-royale', 'card'],
+    queryKey: ['clash-royale', 'cards'],
     queryFn: getCardAction,
     staleTime: 1000 * 60 * 60 * 24,
   });
